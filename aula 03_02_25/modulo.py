@@ -17,3 +17,7 @@ while True:
 
         case("/"):
             print(mt.divi(n1,n2))
+    
+    sair = str(input("Digite x caso queira parar: ")).lower()
+    if sair == "x":
+        break
