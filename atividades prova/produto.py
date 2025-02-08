@@ -4,8 +4,8 @@ while True:
     tupla1 = input("Digite o nome do produto: ")
     tupla2 = input("Digite a quantidade do produto: ")
     dic[tupla1] = [tupla2]
-    sair = str(input("Digite (x) caso queira sair: "))
-    if sair in "xX":
+    sair = str(input("Digite (x) caso queira sair: ")).lower()
+    if sair == "x":
         break
 print(dic)
 
