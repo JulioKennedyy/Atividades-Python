@@ -8,7 +8,17 @@ while True:
             case("1"):
                 nome = str(input("Digite seu nome: "))
                 idade = str(input("Digite sua data de nascimento: "))
-                print(verifi_idade(idade))
+                idade2 = verifi_idade(idade)
+                cnhh = cnh()
+                dicionario = {"Nome": nome, "Idade": idade2, "Cnh": cnhh}
+                lista.append(dicionario)
+            
+            case("2"):
+                for indice, dici in enumerate(lista):
+                    print(f"{indice}: {dici}")
 
-    except:
-        print("deu ruim")
+    except ValueError:
+        print("Digito invalido")
+
+    except Exception as ex:
+        print("deu ruim", ex)

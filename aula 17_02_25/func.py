@@ -1,3 +1,7 @@
+import random
+
+contagem = []
+
 def verifi_idade(idade):
     try:
         idade2 = idade.split("/")
@@ -21,3 +25,9 @@ def verifi_idade(idade):
     except Exception as ex:
         print("Erro", ex)
 
+
+def cnh():
+    num_str = ''.join(random.choices('0123456789', k=9))
+    if num_str not in contagem:
+        contagem.append(num_str)
+        return num_str
