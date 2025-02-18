@@ -16,6 +16,9 @@ while True:
             case("2"):
                 for indice, dici in enumerate(lista):
                     print(f"{indice}: {dici}")
+            
+            case("3"):
+                break
 
     except ValueError:
         print("Digito invalido")
