@@ -8,3 +8,7 @@ while True:
             case("1"):
                 nome = str(input("Digite seu nome: "))
                 idade = str(input("Digite sua data de nascimento: "))
+                print(verifi_idade(idade))
+
+    except:
+        print("deu ruim")
