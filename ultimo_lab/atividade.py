@@ -2,8 +2,16 @@
 
 try:
     with open("Júlio Kennedy dos Santos Silva - transacoes.csv")  as arquivo:
-        texto = arquivo.read()
-        print (texto)
+        texto = arquivo.readlines()
+        valor = 0
+        for valores in texto:
+            novos = valores.strip().split(";")
+            novos[3] = int(novos[3])
+            novos[3] = float(novos[3])
+            novos[3] += valor
+        print(valor)
+
+        
 
 except Exception as ex:
     print("Deu ruim", ex)
